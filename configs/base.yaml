@@ -1,0 +1,27 @@
+seed: 42
+
+data:
+  dataset: amazon_reviews_electronics # update once chosen in Stage 1
+  num_labels: 3
+  label_map:
+    negative: 0
+    neutral: 1
+    positive: 2
+  star_to_label:
+    1: negative
+    2: negative
+    3: neutral
+    4: positive
+    5: positive
+  max_samples: 100000
+  splits: [0.8, 0.1, 0.1]
+
+metrics:
+  primary: macro_f1
+
+models:
+  baseline: tfidf_logreg
+  transformer: distilbert-base-uncased
+
+tracking:
+  wandb_project: review-sentiment

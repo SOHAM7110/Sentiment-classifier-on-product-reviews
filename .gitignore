@@ -1,0 +1,15 @@
+# data and artifacts
+.gitkeep
+.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+checkpoints/
+models/
+wandb/
+ECHO is on.
+# env and secrets
+.venv/
+.env
+ECHO is on.
+# notebooks
+.ipynb_checkpoints/
